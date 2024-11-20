@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --backgroundlogo: #0156b3;
+      }
+
+      #logo {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: var(--backgroundlogo);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 6px solid var(--backgroundlogo);
+      }
+
+      .stripe {
+        position: absolute;
+        background-color: white;
+        width: 140%;
+        left: -20%;
+        transform-origin: center;
+      }
+
+      #stripe1 {
+        height: 40px;
+        top: 30px;
+        transform: rotate(-12deg) perspective(100px) rotateX(30deg);
+        border-radius: 20px;
+      }
+
+      #stripe2 {
+        height: 35px;
+        top: 90px;
+        transform: rotate(-12deg) perspective(100px) rotateX(20deg);
+        border-radius: 17.5px;
+      }
+
+      #stripe3 {
+        height: 30px;
+        top: 150px;
+        transform: rotate(-12deg) perspective(100px) rotateX(10deg);
+        border-radius: 15px;
+      }
+
+      /* Optional container for centering the logo */
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      p {
+        font-family: "Arial Black", "Helvetica Black";
+        font-size: 150px;
+        color: var(--backgroundlogo);
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+    </style>
+    <title>Comsitec Logo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="logo">
+        <div class="stripe" id="stripe1"></div>
+        <div class="stripe" id="stripe2"></div>
+        <div class="stripe" id="stripe3"></div>
+      </div>
+      <p>Comsitec</p>
+    </div>
+  </body>
+</html>
